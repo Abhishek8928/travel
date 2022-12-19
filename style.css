@@ -21,7 +21,7 @@ body{
     background-size: cover;
     z-index: -999;
     background-attachment: fixed;
-    height:90vh;
+    height:650px;
     background-color: black;
     display: flex;
     align-items: center;
@@ -226,16 +226,8 @@ nav{
     gap:1rem;
 }
 .bg-img{
-    background: url(./images/bg-img.png) no-repeat center;
-    width: 100%;
-    background-size: cover;
-    z-index: -999;
-    background-attachment: fixed;
-    height:110vh;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    padding:0px 50px;
+    
+    height:900px;
 }
     
     
@@ -243,17 +235,20 @@ nav{
 
 @media (max-width:576px) {
     .bg-img{
-        height:100vh;
+        height:700px;
+        padding:0px 10px;
     }
 
-    .card{
-        width:260px;
-        border:1px solid #ccc;
-        border-radius: 12px;
-        opacity:0.7;
-        transition: 0.3s;
-        margin:20px 0px;
-    }
+    
+.hero-title{
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.hero-title+p{
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}
     
     .card:hover{
         opacity:1;
@@ -264,5 +259,26 @@ nav{
     justify-content: center;gap:2rem;
     flex-wrap: wrap;
     padding:20px 0px 20px 0px;
+}
+
+
+.button-wrapper{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+}
+.btn-Explore-now{
+    font-size: 14px;
+    padding:14px 28px;
+    border-radius: 26px;
+}
+.btn-access-now{
+    border:1px solid #198754;
+    font-size: 14px;
+    padding:14px 28px;
+    border-radius: 26px;
+    color:white;
+    background-color: #010100;
 }
 }
