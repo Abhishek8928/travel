@@ -16,13 +16,9 @@ body{
     padding:18px 0px;
 }
 .bg-img{
-    background: url(./images/bg-img.png) no-repeat center;
     width: 100%;
     background-size: cover;
-    z-index: -999;
-    background-attachment: fixed;
     height:650px;
-    /* background-color: black; */
     display: flex;
     align-items: center;
     padding:0px 50px;
@@ -37,12 +33,12 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px 5%;
+    padding:10px 0;
 }
 .nav-link-item{
     display: flex;
     align-items: center;
-    gap:2rem;
+    gap:1rem;
     list-style-type: none;
     margin:0px;
 }
@@ -85,7 +81,7 @@ nav{
     padding-bottom: 60px;
 }
 .first-container{
-    width:800px;
+    width:750px;
     color:white;
 }
 .second-container{
@@ -351,7 +347,7 @@ nav{
     text-align: center;
 }
 .second-container{
-    width:80%;
+    width:70%;
 }
 
 .button-wrapper{
@@ -399,6 +395,17 @@ nav{
 }
 
 @media (max-width:576px) {
+
+
+    .banner-wrapper{
+        background-color: #7274fb;
+        color:white;
+        text-align: center;
+    }
+    .banner-wrapper p{
+        font-size: 16px;
+        padding:18px 0px;
+    }
     .bg-img{
         height:700px;
         padding:0px 10px;
@@ -411,7 +418,7 @@ nav{
 }
 
 .hero-title+p{
-    font-size: 16px;
+    font-size: 14px;
     font-family: Helvetica, sans-serif;
 }
     
@@ -430,22 +437,24 @@ nav{
 
 .button-wrapper{
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    gap:1rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.2rem;
 }
 .btn-Explore-now{
     font-size: 14px;
-    padding:14px 28px;
-    border-radius: 26px;
+    padding:16px 24px;
+    border-radius: 8px;
 }
 .btn-access-now{
-    border:1px solid #198754;
-    font-size: 14px;
-    padding:14px 28px;
+    /* border:1px solid #198754;
+    font-size: 12px;
+    padding:14px 10px;
     border-radius: 26px;
     color:white;
-    background-color: #010100;
+    background-color: #010100; */
+    display:none;
 }
 
 

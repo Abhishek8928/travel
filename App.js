@@ -35,13 +35,13 @@ showLink = () => {
             })
         
             gsap.to(".resize-btn", {
-                x:-4
+                x:-40
             })
         
     }
     else {
         gsap.to(".resize-btn", {
-            x:5
+            x:20
         })
         navigationLink.classList.add("d-none-1");
         navigationLink.classList.remove("nav-link-1");
