@@ -22,7 +22,7 @@ body{
     z-index: -999;
     background-attachment: fixed;
     height:650px;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     align-items: center;
     padding:0px 50px;
@@ -79,7 +79,7 @@ nav{
    width:1500px;
 }
 .pt-8{
-    padding-top: 80px;
+    padding-top: 50px;
 }
 .pb-6{
     padding-bottom: 60px;
@@ -95,6 +95,7 @@ nav{
 .hero-title{
     font-size: 68px;
     font-weight: 900;
+    color:black;
 }
 .mt-0{
     margin-top: 0px;
@@ -105,6 +106,7 @@ nav{
 .hero-title+p{
     font-size: 18px;
     font-family: Helvetica, sans-serif;
+    color:black;
 }
 
 .button-wrapper{
@@ -164,6 +166,7 @@ nav{
 }
 
 
+
 .describeBox{
    background-color:  #fffcf4;
    padding: 20px;
@@ -174,7 +177,9 @@ nav{
     /* border: 1px solid blue; */
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap-reverse;
     margin-top: 50px;
+    gap:2rem;
 }
 
 .describeInfo{
@@ -204,11 +209,12 @@ nav{
 
 .describeImage{
     /* border: 1px solid red; */
-    width: 30%;
+    width: 400px;
 }
 
 .describeImage img{
     width: 100%;
+    border-radius: 24px;
 }
 
 .explore{
@@ -236,22 +242,26 @@ nav{
 
 .exploreBox{
     /* border: 1px solid cyan; */
-    height: 50vh;
+    height: 400px;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:1rem;
 
 }
 .exploreCard{
     /* border: 1px solid brown; */
-    width: 30%;
+    width:400px;
     height: 100%;
     position: relative;
+    box-sizing: border-box;
 }
 
 .exploreCard img{
     width: 100%;
     height: 100%;
     opacity: 0.8;
+    object-fit: cover;
    
 }
 
@@ -284,7 +294,7 @@ nav{
 }
 
 
-@media (max-width:980px) {
+@media (max-width:1000px) {
     nav{
         display:flex;
         justify-content: space-between;
@@ -332,6 +342,9 @@ nav{
     align-items: center;
     gap: 2rem;
  }
+ .txt-center{
+    text-align: center;
+ }
  .first-container{
     width:100%;
     color:white;
@@ -349,9 +362,39 @@ nav{
 }
 .bg-img{
     
-    height:900px;
+    height:600px;
 }
-    
+
+
+ .descIntro{
+     /* border: 1px solid blue; */
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap-reverse;
+     margin-top: 50px;
+ }
+ 
+ 
+ .exploreBox{
+     /* border: 1px solid cyan; */
+     height: 300px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap:1rem;
+ 
+ }
+ 
+ .exploreCard{
+    /* border: 1px solid brown; */
+    width:300px;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+ 
+ 
     
 }
 
@@ -378,7 +421,8 @@ nav{
     
 .card-wrapper{
     display:flex;
-    justify-content: center;gap:2rem;
+    justify-content: center;
+    gap:2rem;
     flex-wrap: wrap;
     padding:20px 0px 20px 0px;
 }
@@ -402,5 +446,12 @@ nav{
     border-radius: 26px;
     color:white;
     background-color: #010100;
+}
+
+
+.button-wrapper{
+    margin-top: 0px;
+    display: flex;
+    gap:1rem;
 }
 }
