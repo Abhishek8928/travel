@@ -2,8 +2,6 @@
 showLink = () => {
     let navigationLink = document.getElementsByClassName('target-nav')[0];
 
-
-
     
     if (navigationLink.classList.contains("d-none-1"))
     {
